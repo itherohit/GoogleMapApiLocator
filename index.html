@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;1,100&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/c939d0e917.js"></script>
+    <title>Store Locator</title>
+</head>
+
+<body>
+    <div class="title">Store Locator</div>
+    <div class="search-container">
+        <div class="search">
+            <input type="text" placeholder="Enter zip" />
+            <i class="fas fa-search"></i>
+        </div>
+    </div>
+    <div class="stores-list-container">
+        <div class="stores-list">
+            <div class="store-container">
+                <div class="store-num-circle">1</div>
+                <div class="store-address">
+                    <p class="store-address-icon"><i class="far fa-compass"></i></p>
+                    <p class="store-address-para">8480 Beverly Blvd <br>Los Angeles, CA 90048</p>
+                </div>
+                <div class="store-phone-number">
+                    <p><i class="fas fa-phone-alt"></i></p>
+                    <p class="store-address-num">356-345-4654</p>
+                </div>
+            </div>
+        </div>
+        <div class="stores-list">
+            <div class="store-container">
+                <div class="store-num-circle">2</div>
+                <div class="store-address">
+                    <p class="store-address-icon"><i class="far fa-compass"></i></p>
+                    <p class="store-address-para">8480 Beverly Blvd <br>Los Angeles, CA 90048</p>
+                </div>
+                <div class="store-phone-number">
+                    <p class="store-address-icon"><i class="fas fa-phone-alt"></i></p>
+                    <p class="store-address-num">356-345-4654</p>
+                </div>
+            </div>
+        </div>
+        <div class="stores-list">
+            <div class="store-container">
+                <div class="store-num-circle">3</div>
+                <div class="store-address">
+                    <p class="store-address-icon"><i class="far fa-compass"></i></p>
+                    <p class="store-address-para">8480 Beverly Blvd <br>Los Angeles, CA 90048</p>
+                </div>
+                <div class="store-phone-number">
+                    <p><i class="fas fa-phone-alt"></i></p>
+                    <p class="store-address-num">356-345-4654</p>
+                </div>
+            </div>
+        </div>
+        <div class="stores-list">
+            <div class="store-container">
+                <div class="store-num-circle">4</div>
+                <div class="store-address">
+                    <p class="store-address-icon"><i class="far fa-compass"></i></p>
+                    <p class="store-address-para">8480 Beverly Blvd <br>Los Angeles, CA 90048</p>
+                </div>
+                <div class="store-phone-number">
+                    <p><i class="fas fa-phone-alt"></i></p>
+                    <p class="store-address-num">356-345-4654</p>
+                </div>
+            </div>
+        </div>
+        <div class="stores-list">
+            <div class="store-container">
+                <div class="store-num-circle">5</div>
+                <div class="store-address">
+                    <p class="store-address-icon"><i class="far fa-compass"></i></p>
+                    <p class="store-address-para">8480 Beverly Blvd <br>Los Angeles, CA 90048</p>
+                </div>
+                <div class="store-phone-number">
+                    <p><i class="fas fa-phone-alt"></i></p>
+                    <p class="store-address-num">356-345-4654</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+    <script>
+        var map;
+
+        function initMap() {
+            var India = {
+                lat: 20.5937,
+                lng: 78.9629
+            }
+            var India1 = {
+                lat: 10.5937,
+                lng: 78.9629
+            }
+
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: India,
+                zoom: 5
+            });
+
+            var marker = new google.maps.Marker({
+                position: India,
+                map: map,
+                title: "Hey People!"
+            })
+            var marker = new google.maps.Marker({
+                position: India1,
+                map: map,
+                title: "Hey People!"
+            })
+        }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh15L6ZQVrZVsMjwAhb_3-X6bbgpSGtQk&callback=initMap" async defer></script>
+
+</body>
+
+</html>

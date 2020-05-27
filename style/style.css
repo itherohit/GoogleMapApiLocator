@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 25px;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: #333;
+    border-radius: 10px;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: black;
+}
+
+#map {
+    position: relative;
+    height: 100vh;
+}
+
+.title {
+    position: absolute;
+    top: 50px;
+    left: 75px;
+    font-size: 80px;
+    z-index: 30;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #333;
+}
+
+.search-container {
+    width: 360px;
+    height: 60px;
+    background-color: #454E53;
+    position: absolute;
+    z-index: 30;
+    top: 150px;
+    left: 75px;
+    border-radius: 30px;
+}
+
+.search {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.search input {
+    width: 100%;
+    font-size: 25px;
+    border: none;
+    background-color: transparent;
+    color: white;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search i {
+    color: white;
+    font-size: 25px;
+}
+
+.stores-list-container {
+    width: 320px;
+    background-color: white;
+    position: absolute;
+    z-index: 30;
+    top: 220px;
+    left: 75px;
+    border-radius: 30px;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.stores-list {
+    padding: 3px 0;
+    border-bottom: 3px solid #333;
+}
+
+.store-container {
+    width: 100%;
+    position: relative;
+    border-radius: 15px;
+}
+
+.store-address {
+    display: flex;
+    align-items: center;
+    font-size: 1rem;
+    height: 70px;
+}
+
+.store-address-icon {
+    margin-left: 10px;
+    font-size: 1.5rem;
+}
+
+.store-address-para {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 20px;
+}
+
+.store-phone-number {
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 10px;
+    height: 50px;
+}
+
+.store-address-num {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    margin-left: 20px;
+    color: gray;
+}
+
+.store-num-circle {
+    position: absolute;
+    right: 2%;
+    top: 25%;
+    height: 50px;
+    width: 50px;
+    border-radius: 100px;
+    background-color: #333;
+    z-index: 99;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 1.75rem;
+    color: white;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.store-container:hover {
+    background-color: rgb(196, 204, 209);
+}
